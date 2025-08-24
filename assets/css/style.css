@@ -11,6 +11,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 button,
 select,
 input,
@@ -26,4 +30,60 @@ h4,
 h5,
 h6 {
     font-family: "Sora", sans-serif;
+}
+
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 131px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 99px;
+    /* Viền hai bên nửa vòng tròn */
+    border: 1px solid rgba(0, 9, 88, 0.7);
+
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000958;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Phần header-top */
+.header {
+    padding: 26px 0;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.header-actions__link,
+.navbar__link {
+    padding: 8px 18px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #5E6085;
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-actions__btn {
+    --height: 50px;
+    min-width: 117px;
 }
