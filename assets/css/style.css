@@ -508,7 +508,7 @@ h6 {
 
 .about__tab-list {
     position: relative;
-    display: flex;
+    display: inline-flex;
     column-gap: 56px;
 }
 
@@ -518,6 +518,7 @@ h6 {
     display: flex;
     align-items: center;
     column-gap: 10px;
+    cursor: pointer;
 }
 
 .about__content-item-more::after,
