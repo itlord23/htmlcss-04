@@ -608,12 +608,11 @@ h6 {
 }
 
 .service__body {
-    margin-top: 31px;
     /**/
+    margin-top: 71px;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    align-items: center;
-    /**/
+    column-gap: 65px;
 }
 
 .service-item {
@@ -629,10 +628,22 @@ h6 {
 }
 
 .service-item__heading {
+    position: relative;
+    padding-left: 12px;
     font-family: Sora, sans-serif;
     font-size: 2.2rem;
     font-weight: 600;
     color: #000958;
+}
+
+.service-item__heading::before {
+    position: absolute;
+    inset: 3px auto 3px 0;
+    content: "";
+    display: inline-block;
+    width: 2px;
+    border-radius: 1px;
+    background: linear-gradient(#FF5B2E, #FFA187);
 }
 
 .service-item__desc {
@@ -657,4 +668,39 @@ h6 {
 .service-item__more::after {
     margin: 2px 0 0 5px;
     content: url(../icons/ArrowUpRight.svg);
+}
+
+.service__cta-wrap {
+    margin-top: 17px;
+    position: relative;
+}
+
+.service__cta-wrap::after {
+    position: absolute;
+    height: 350px;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    content: "";
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+}
+
+.service__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.service__btn-wrap {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.service__btn {
+    min-width: 214px;
+    color: var(--primary-color);
+    border-color: currentColor;
 }
